@@ -18,13 +18,26 @@
 # else:
 #     print(number,"is odd number")
 
-marks = int(input("Enter a marks"))
 
-if marks >90 :
-    print("A+")
-elif marks>80 and marks<=90:
-    print("B")
-elif marks>70 and marks <=79:
-    print("C")
-else :
-    print("Fail")
+# marks = int(input("Enter a marks"))
+
+# if marks >90 :
+#     print("A+")
+# elif marks>80 and marks<=90:
+#     print("B")
+# elif marks>70 and marks <=79:
+#     print("C")
+# else :
+#     print("Fail")
+
+
+nums = range (1,11)
+for num in nums:
+    print(num)
+
+i = 1 
+
+while i<=10:
+    print(i)
+    i+=1
+
