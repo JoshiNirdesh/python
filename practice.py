@@ -49,12 +49,17 @@
 # print(min(numbers))
 # print(sum(numbers))
 
-numbers = []
+# numbers = []
 
-for i in range(5):
-    num = int(input(f"Enter {i}  number"))
-    numbers.append(num)
+# for i in range(5):
+#     num = int(input(f"Enter {i}  number"))
+#     numbers.append(num)
 
-for even in numbers:
-    if even%2==0:
-        print(even)    
+# for even in numbers:
+#     if even%2==0:
+#         print(even)    
+
+def square(n):
+    return n*n
+
+print("Sum",square(5))
