@@ -31,13 +31,30 @@
 #     print("Fail")
 
 
-nums = range (1,11)
-for num in nums:
-    print(num)
+# nums = range (1,11)
+# for num in nums:
+#     print(num)
 
-i = 1 
+# i = 1 
 
-while i<=10:
-    print(i)
-    i+=1
+# while i<=10:
+#     print(i)
+#     i+=1
 
+# for num in range(1,11):
+#     print("5 *",num,"=",num*5)
+
+# numbers = [1,2,3,4,5]
+# print(max(numbers))
+# print(min(numbers))
+# print(sum(numbers))
+
+numbers = []
+
+for i in range(5):
+    num = int(input(f"Enter {i}  number"))
+    numbers.append(num)
+
+for even in numbers:
+    if even%2==0:
+        print(even)    
