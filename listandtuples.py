@@ -1,0 +1,20 @@
+# list = [1,54,21,23,2]
+# print(list[1:3])
+# list.append(12)
+
+# # list.sort()
+# # list.sort(reverse = True)
+# list.reverse()
+# print(list)
+# list.remove(1)
+# print(list)
+# list.pop(2)
+# print(list)
+
+tup = (1,2,56,22,21,78,2)
+
+print(tup)
+print(type(tup))
+
+print(tup.index(2))
+print(tup.count(2))

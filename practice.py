@@ -59,7 +59,21 @@
 #     if even%2==0:
 #         print(even)    
 
-def square(n):
-    return n*n
+# def square(n):
+#     return n*n
 
-print("Sum",square(5))
+# print("Sum",square(5))
+
+text = input("Enter a string")
+
+print(text.upper())
+print(text[::-1])
+
+vowels = "aeiouAEIOU"
+
+count = 0
+for char in text:
+    if char in vowels:
+        count +=1
+
+print("Vowels",count)
