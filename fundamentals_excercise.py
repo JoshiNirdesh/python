@@ -45,5 +45,19 @@
 # elif op=="/":
 #         print(first,"/",second," = ", first/second)
 
-num = int(input("Enter a number"))
-    
+
+# for num in range(1,50):
+#     if(num%2==0):
+#         print(num)  
+
+num = int(input("Enter a number "))
+
+# for nums in range(1,11):
+#     print(num," x ",nums," = ",num*nums)
+# fac = 1
+# for nums in range(1,num+1):
+#     fac *=nums
+# print("Factorials ", fac)
+rev = 0 
+
+while num >
