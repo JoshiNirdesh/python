@@ -125,13 +125,39 @@
 
 # print(reverse_string("nirdesh"))
 
-class Student :
-    def __init__ (self,name,age):
-        self.name = name
-        self.age = age
+# class Student :
+#     def __init__ (self,name,age):
+#         self.name = name
+#         self.age = age
 
-    def display(self):
-        print("Name : ",self.name,"Age : ",self.age)   
+#     def display(self):
+#         print("Name : ",self.name,"Age : ",self.age)   
 
-s1=Student("Nirdesh",12)
-s1.display()
+# s1=Student("Nirdesh",12)
+# s1.display()
+
+balance = 1000
+
+while True:
+    print("\n 1. Check Balance")
+    print("2. Deposit")
+    print("3. Withdraw")
+    print("4. Exit")
+
+    choice = input("Enter a choice : ")
+
+    if choice == "1":
+        print("Your balance is : ", balance)
+    elif choice =="2":
+        deposit = float(input("Enter a amount :  "))
+        balance +=deposit
+        print("Your balance ",balance)
+    elif choice =="3":
+        withdraw = float(input("Enter a anount : "))
+        balance -=withdraw
+        print("Your balance : ",balance)
+    elif choice=="4":
+        print("Thank you")
+        break
+    else:
+        print("Invalid Choive") 
