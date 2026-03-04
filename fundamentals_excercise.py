@@ -180,7 +180,7 @@ while True:
         print("Total Expense : ",sum(expense))
     elif choice =="3":
         print("Highest Expense",max(expense))
-    elif choice =="4":
+    elif choicep =="4":
         print("Thank You")
         break
     else:
