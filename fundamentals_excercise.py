@@ -136,28 +136,52 @@
 # s1=Student("Nirdesh",12)
 # s1.display()
 
-balance = 1000
+# balance = 1000
+
+# while True:
+#     print("\n 1. Check Balance")
+#     print("2. Deposit")
+#     print("3. Withdraw")
+#     print("4. Exit")
+
+    # choice = input("Enter a choice : ")
+
+    # if choice == "1":
+    #     print("Your balance is : ", balance)
+    # elif choice =="2":
+    #     deposit = float(input("Enter a amount :  "))
+    #     balance +=deposit
+    #     print("Your balance ",balance)
+    # elif choice =="3":
+    #     withdraw = float(input("Enter a anount : "))
+    #     balance -=withdraw
+    #     print("Your balance : ",balance)
+    # elif choice=="4":
+    #     print("Thank you")
+    #     break
+    # else:
+    #     print("Invalid Choive") 
+
+expense = []
 
 while True:
-    print("\n 1. Check Balance")
-    print("2. Deposit")
-    print("3. Withdraw")
+    print("1. Add Expense")
+    print("2. Total Expense")
+    print("3. Highest Expense")
     print("4. Exit")
 
-    choice = input("Enter a choice : ")
+    choice = input("Enter a choice")
 
     if choice == "1":
-        print("Your balance is : ", balance)
+        expenses = int(input("Enter a amount : "))
+        expense.append(expenses)
+        print("Expense Added Successfully")
     elif choice =="2":
-        deposit = float(input("Enter a amount :  "))
-        balance +=deposit
-        print("Your balance ",balance)
+        print("Total Expense : ",sum(expense))
     elif choice =="3":
-        withdraw = float(input("Enter a anount : "))
-        balance -=withdraw
-        print("Your balance : ",balance)
-    elif choice=="4":
-        print("Thank you")
+        print("Highest Expense",max(expense))
+    elif choice =="4":
+        print("Thank You")
         break
     else:
-        print("Invalid Choive") 
+        print("Invalid")
