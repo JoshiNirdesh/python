@@ -115,7 +115,23 @@
 # else:
 #     print("Not palindrome")
 
-numbers = [10, 45, 23, 67, 89, 34]
-numbers.sort()
+# numbers = [10, 45, 23, 67, 89, 34]
+# numbers.sort()
 
-print("Second Larget Number",numbers[-2])
+# print("Second Larget Number",numbers[-2])
+
+# def reverse_string(text):
+#     return text[::-1]
+
+# print(reverse_string("nirdesh"))
+
+class Student :
+    def __init__ (self,name,age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print("Name : ",self.name,"Age : ",self.age)   
+
+s1=Student("Nirdesh",12)
+s1.display()
