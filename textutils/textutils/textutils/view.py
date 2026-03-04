@@ -2,9 +2,12 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
+ 
     return render(request,"index.html")
 
 def rempunc(request):
+    text = request.GET.get("text")
+    print(text)
     return HttpResponse("Remove Punchuation")
 
 def capfirst (request):
