@@ -1,7 +1,19 @@
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse('''<a href="https://www.youtube.com/watch?v=ES-bdt0KUZg&list=PLu0W_9lII9ah7DDtYtflgwMwpT3xmjXY9&index=8" >Code with harry </a>''')
+    return HttpResponse("Home") 
 
-def about (request):
-    return HttpResponse("About Us")
+def rempunc(request):
+    return HttpResponse("Remove Punchuation")
+
+def capfirst (request):
+    return HttpResponse("Capitalize First")
+
+def newlineremove(request):
+    return HttpResponse("New line remove")
+
+def spaceremove (request):
+    return HttpResponse("Space remove")
+
+def charcount (request):
+    return HttpResponse("Char count")
