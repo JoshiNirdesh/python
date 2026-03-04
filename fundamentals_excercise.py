@@ -106,11 +106,16 @@
 #     else:
 #         print("Prime")
 
-string = input("Enter a string ")
+# string = input("Enter a string ")
 
-rev = string[::-1]
+# rev = string[::-1]
 
-if(string == rev):
-    print("Palindrome")
-else:
-    print("Not palindrome")
+# if(string == rev):
+#     print("Palindrome")
+# else:
+#     print("Not palindrome")
+
+numbers = [10, 45, 23, 67, 89, 34]
+numbers.sort()
+
+print("Second Larget Number",numbers[-2])
