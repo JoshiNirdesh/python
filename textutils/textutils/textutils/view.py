@@ -5,19 +5,14 @@ def index(request):
  
     return render(request,"index.html")
 
-def rempunc(request):
-    text = request.GET.get("text")
-    print(text)
-    return HttpResponse("Remove Punchuation")
+def analyze(request):
+    djtext = request.GET.get("text","default")
+    punc = '''!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~'''
+    analyzedText = ""
+    for char in djtext:
+        if char not in punc:
+            analyzedText=analyzedText+char
+            
+    params = {"purpose":"Remove Punchuation","text":analyzedText}
 
-def capfirst (request):
-    return HttpResponse("Capitalize First")
-
-def newlineremove(request):
-    return HttpResponse("New line remove")
-
-def spaceremove (request):
-    return HttpResponse("Space remove")
-
-def charcount (request):
-    return HttpResponse("Char count")
+    return render(request,"analyze.html",params)
