@@ -7,13 +7,14 @@
   </head>
   <body>
     <h1>Welcome to the text analayzer . Enter your text here</h1>
-    <form action="analyze" method="get">
+    <form action="analyze" method="post">
+      {% csrf_token %}
       <textarea name="text" style="width: 1437px; height: 167px"></textarea
       ><br />
       <input type="checkbox" name="rempunc" /> Remove Punchuation <br />
       <input type="checkbox" name="fullcap" /> Full capitalized <br />
       <input type="checkbox" name="newlinerem" />New Line Remove <br />
-      <input type="checkbox" name="charcount">Count Character <br>
+      <input type="checkbox" name="charcount" />Count Character <br />
 
       <button>Analyze Text</button>
     </form>
