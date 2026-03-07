@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 def index(request):
-    return HttpResponse("Shop Page")
+    return render(request,'home.html')
 
 def about(request):
     return HttpResponse("About us page")
